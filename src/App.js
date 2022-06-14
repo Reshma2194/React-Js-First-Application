@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import User from './User';
+import Help from './Help';
 
 function App() {
+  let classname="App";
+  function add(a,b){
+    return a+b;
+  }
+  let name ="reshma";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classname}>
+     <h1>Welcome {name} to React JS</h1>
+     <h2>Addition of 10 & 20 is {add(10,20)}</h2>
+    <User/>
+    <Help/>
     </div>
   );
 }
